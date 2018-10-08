@@ -34,7 +34,7 @@ public class GamePanelHandler extends JPanel
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                mC.creatArbeitsplatz(1,this);
+                mC.creatArbeitsplatz(1);
                 töten.setEnabled(false);
                 steuer.setEnabled(false);
                 feuern.setEnabled(false);
@@ -46,7 +46,7 @@ public class GamePanelHandler extends JPanel
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                mC.creatArbeitsplatz(2,this);
+                mC.creatArbeitsplatz(2);
                 töten.setEnabled(false);
                 steuer.setEnabled(false);
                 feuern.setEnabled(false);
@@ -58,7 +58,7 @@ public class GamePanelHandler extends JPanel
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                mC.creatArbeitsplatz(3,this);
+                mC.creatArbeitsplatz(3);
                 töten.setEnabled(false);
                 steuer.setEnabled(false);
                 feuern.setEnabled(false);

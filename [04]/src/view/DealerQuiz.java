@@ -18,11 +18,11 @@ public class DealerQuiz extends JPanel
     private Arbeitsplatz ap;
     private int counter;
     private int shootcounter;
-    private GamePanelHandler gph;
 
-    public DealerQuiz(MainController mc, Arbeitsplatz ap,GamePanelHandler gph)
+
+    public DealerQuiz(MainController mc, Arbeitsplatz ap)
     {
-        this.gph = gph;
+
         this.mc = mc;
         this.ap = ap;
         counter = 0;
@@ -119,7 +119,8 @@ public class DealerQuiz extends JPanel
             answerB.setText("Checker");
             answerC.setText("Lol");
             answerD.setText("LAlala");
-            gph.updateButtons();
+            mc.updateMainView();
+
 
         }
     }
