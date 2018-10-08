@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GamePanelHandler extends JPanel
+public class GamePanelHandler extends
 {
 
     private JTextArea textArea1;
@@ -34,7 +34,7 @@ public class GamePanelHandler extends JPanel
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                mC.creatArbeitsplatz(1);
+                mC.creatArbeitsplatz(1,this);
                 töten.setEnabled(false);
                 steuer.setEnabled(false);
                 feuern.setEnabled(false);
@@ -46,7 +46,7 @@ public class GamePanelHandler extends JPanel
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                mC.creatArbeitsplatz(2);
+                mC.creatArbeitsplatz(2,this);
                 töten.setEnabled(false);
                 steuer.setEnabled(false);
                 feuern.setEnabled(false);
@@ -58,7 +58,7 @@ public class GamePanelHandler extends JPanel
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                mC.creatArbeitsplatz(3);
+                mC.creatArbeitsplatz(3,this);
                 töten.setEnabled(false);
                 steuer.setEnabled(false);
                 feuern.setEnabled(false);

@@ -3,6 +3,7 @@ package control;
 import model.Player;
 import sun.applet.Main;
 import view.Arbeitsplatz;
+import view.GamePanelHandler;
 import view.MainView;
 
 public class MainController {
@@ -27,8 +28,8 @@ public class MainController {
         this.mV = mV;
     }
 
-    public void creatArbeitsplatz(int p){
-        ap = new Arbeitsplatz(this,p);
+    public void creatArbeitsplatz(int p,GamePanelHandler gph){
+        ap = new Arbeitsplatz(this,p,gph );
     }
 
     public void creatPlayer(String name){
