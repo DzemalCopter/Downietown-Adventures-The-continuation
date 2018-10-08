@@ -35,6 +35,10 @@ public class GamePanelHandler extends JPanel
             public void actionPerformed(ActionEvent e)
             {
                 mC.creatArbeitsplatz(1);
+                töten.setEnabled(false);
+                steuer.setEnabled(false);
+                feuern.setEnabled(false);
+
             }
         });
         steuer.addActionListener(new ActionListener()
@@ -43,7 +47,11 @@ public class GamePanelHandler extends JPanel
             public void actionPerformed(ActionEvent e)
             {
                 mC.creatArbeitsplatz(2);
+                töten.setEnabled(false);
+                steuer.setEnabled(false);
+                feuern.setEnabled(false);
             }
+
         });
         feuern.addActionListener(new ActionListener()
         {
@@ -51,11 +59,17 @@ public class GamePanelHandler extends JPanel
             public void actionPerformed(ActionEvent e)
             {
                 mC.creatArbeitsplatz(3);
+                töten.setEnabled(false);
+                steuer.setEnabled(false);
+                feuern.setEnabled(false);
             }
         });
     }
 
     public void updateButtons(){
+        töten.setEnabled(true);
+        steuer.setEnabled(true);
+        feuern.setEnabled(true);
         String[] s = mC.getAuftragAndChoices();
         textArea1.setText(s[0]);
         töten.setText(s[1]);

@@ -9,8 +9,11 @@ public class Arbeitsplatz extends JFrame
     private MainController mC;
     private int pan;
     private JPanel töten,steuerklärung,feuern,dealerQuiz;
+    private GamePanelHandler gph;
 
-    public Arbeitsplatz(MainController mainController,int pan) {
+    public Arbeitsplatz(MainController mainController,int pan,GamePanelHandler gph) {
+
+        this.gph = gph;
 
         this.setLocation(1050,50);
         this.setSize(1000,750);
@@ -22,7 +25,7 @@ public class Arbeitsplatz extends JFrame
         mC = mainController;
         this.pan = pan;
 
-        dealerQuiz = new DealerQuiz(mC,this).getPanel();
+        dealerQuiz = new DealerQuiz(mC,this,gph).getPanel();
         töten = new Töten(this).getPanel();
         steuerklärung = new Steuererklärung(this).getPanel();
         feuern = new Feuern(this).getPanel();

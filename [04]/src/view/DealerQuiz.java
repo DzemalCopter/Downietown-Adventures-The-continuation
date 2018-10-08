@@ -17,13 +17,18 @@ public class DealerQuiz extends JPanel
     private MainController mc;
     private Arbeitsplatz ap;
     private int counter;
+    private int shootcounter;
+    private GamePanelHandler gph;
 
-    public DealerQuiz(MainController mc, Arbeitsplatz ap)
+    public DealerQuiz(MainController mc, Arbeitsplatz ap,GamePanelHandler gph)
     {
+        this.gph = gph;
         this.mc = mc;
         this.ap = ap;
         counter = 0;
         updateQuestionsAndAnswers();
+        shootcounter = 0;
+
     }
 
     private void createButtons(){
@@ -31,6 +36,8 @@ public class DealerQuiz extends JPanel
             @Override
             public void actionPerformed(ActionEvent e) {
                 feedback("A");
+                questionArea.setText(questionArea.getText()+"Treffer");
+                Check();
 
                 if(counter < 4){
 
@@ -78,7 +85,8 @@ public class DealerQuiz extends JPanel
             updateQuestionsAndAnswers();
             counter = counter + 1;
 
-        }else if(counter < 4){
+        }else if(counter >= 4){
+            schiesserei();
 
         }
 
@@ -96,9 +104,29 @@ public class DealerQuiz extends JPanel
 
 
     }
+    public void schiesserei(){
+        questionArea.setText("Töte die Person!!!!");
+        answerA.setText("Schuss!");
+        answerB.setText("Schuss!");
+        answerC.setText("Schuss!");
+        answerD.setText("Schuss");
+    }
+    public void Check(){
+        shootcounter = shootcounter +1;
+        if(shootcounter == 10){
+            questionArea.setText("Ja man, er ist tot");
+            answerA.setText("Aha");
+            answerB.setText("Checker");
+            answerC.setText("Lol");
+            answerD.setText("LAlala");
+            gph.updateButtons();
+
+        }
+    }
 
     public JPanel getPanel()
     {
         return panel;
     }
+
 }

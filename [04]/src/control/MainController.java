@@ -1,7 +1,9 @@
 package control;
 
 import model.Player;
+import sun.applet.Main;
 import view.Arbeitsplatz;
+import view.MainView;
 
 public class MainController {
 
@@ -11,11 +13,18 @@ public class MainController {
    private AuftragHandler qh;
    private Arbeitsplatz ap;
    private QuestionHandler th;
+   private MainView mV;
+
 
 
 
     public MainController(){
      qh = new AuftragHandler();
+
+    }
+
+    public void setMainView(MainView mV){
+        this.mV = mV;
     }
 
     public void creatArbeitsplatz(int p){
@@ -67,6 +76,12 @@ public class MainController {
             player.setLevel(getPlayerLevel()+1);
         }
         return answer;
+    }
+    public void updateMainView(){
+        player.setLevel(getPlayerLevel()+1);
+
+
+
     }
 
 

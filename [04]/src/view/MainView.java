@@ -8,7 +8,7 @@ public class MainView extends JFrame {
 
 
     MainController mainController;
-    private JPanel startPanel, gamePanel;
+    private JPanel startPanel,gamePanel;
 
 
     public MainView(MainController mainController) {
@@ -45,10 +45,12 @@ public class MainView extends JFrame {
             this.gamePanel = new GamePanelHandler(mainController, mainController.getPlayerName(), mainController.getPlayerLevel()).getPanel();
             this.getContentPane().add(gamePanel);
             this.getContentPane().revalidate();
+
         }
 
 
     }
+
 
 
 }
