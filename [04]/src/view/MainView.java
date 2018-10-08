@@ -21,7 +21,7 @@ public class MainView extends JFrame {
         this.setLocation(50,50);
         this.setSize(1000,750);
         this.setResizable(false);
-        this.setTitle("Quit-Game-Template");
+        this.setTitle("TellKosAdventure");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
     }
@@ -30,6 +30,13 @@ public class MainView extends JFrame {
         mainController.creatPlayer(name);
         String noName = "";
         if (name.equals(noName)) {
+            int choice = JOptionPane.showOptionDialog(null,
+                    "Gib einen Namen ein!",
+                    "Dumm?",JOptionPane.OK_OPTION,
+                    JOptionPane.QUESTION_MESSAGE,
+                    null, null, null);
+
+
         }else {
 
             this.getContentPane().removeAll();

@@ -3,6 +3,8 @@ package view;
 import control.MainController;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class GamePanelHandler extends JPanel
 {
@@ -12,8 +14,8 @@ public class GamePanelHandler extends JPanel
     private JLabel name;
     private JLabel level;
     private JButton töten;
-    private JButton streiten;
     private JButton feuern;
+    private JButton steuer;
     private JButton colorslider;
     private MainController mC;
     private String playerName;
@@ -27,17 +29,26 @@ public class GamePanelHandler extends JPanel
         updateButtons();
 
 
+        töten.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+
+            }
+        });
     }
 
     public void updateButtons(){
         String[] s = mC.getAuftragAndChoices();
         textArea1.setText(s[0]);
         töten.setText(s[1]);
-        feuern.setText(s[2]);
-        streiten.setText(s[3]);
+        steuer.setText(s[2]);
+        feuern.setText(s[3]);
         name.setText(playerName);
         level.setText("" + playerlevel);
     }
+
 
     public void updatePictureFrame(){
 

@@ -32,7 +32,7 @@
           <text value="Button"/>
         </properties>
       </component>
-      <component id="d0a1b" class="javax.swing.JButton" binding="feuern">
+      <component id="d0a1b" class="javax.swing.JButton" binding="steuer">
         <constraints>
           <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -56,12 +56,12 @@
           <text value="Button"/>
         </properties>
       </component>
-      <component id="f02b9" class="javax.swing.JButton" binding="streiten">
+      <component id="f02b9" class="javax.swing.JButton" binding="feuern">
         <constraints>
           <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Button"/>
+          <text value="6"/>
         </properties>
       </component>
       <component id="5dfd2" class="javax.swing.JLabel" binding="name">
