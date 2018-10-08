@@ -1,8 +1,8 @@
 package control;
 
-import model.LevelQuestions;
+import model.Auftrag;
 import model.Player;
-import model.Question;
+import model.Levels;
 
 public class MainController {
 
@@ -28,9 +28,9 @@ public class MainController {
         return player.getLevel();
     }
 
-    public String[] getQuestionAndAnswers(){
-        String[] questions = qh.getRandomQuestion(getPlayerLevel());
-         rightAnswer = questions[5];
+    public String[] getAuftragAndChoices(){
+        String[] questions = qh.getRandomChoices(getPlayerLevel());
+
 
 
         String [] output = new String[5];
@@ -41,13 +41,5 @@ public class MainController {
         return output;
      }
 
-    public boolean answer(String chosenAnswer){
-        boolean answer = false;
-        // chosenAnswer == rigthAnswer --> Prüfung, ob beide String auf einen gemeinsamen Punkt im Arbeitsspeicher zeigen.
-        if(chosenAnswer.equals(rightAnswer) ){
-            answer = true;
-            player.setLevel(getPlayerLevel()+1);
-        }
-        return answer;
-    }
+
 }

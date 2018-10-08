@@ -12,7 +12,7 @@ public class Auftrag {
 
     }
 
-    public String getQuestion(){
+    public String getScenario(){
         return scenario;
     }
 
