@@ -19,9 +19,9 @@ public class Levels {
                 auftrag[1] = new Auftrag("Dein Chef hat zum dritten mal an diesem Tag deinen Kaffee geklaut. Deine Aggression verleitet dich zu...",new String[]{"Töten","Steuererklärung schreiben","Streiten"});
                 break;
             case 2: auftrag = new Auftrag[3];
-                auftrag[0] = new Auftrag("Du bist der Boss einer Firma und sitzt an einem schönen, sonnigen Tag in deinem Büro und schaust in die Firmenrechnung. Aufeinmal merkst du, dass dein Manager Geld veruntreut  hat. Was machst du?",new String[]{"Töten","Steuererklärung schreiben","Feuern"});
-                auftrag[1] = new Auftrag("Du bist der Boss einer Firma und sitzt an einem schönen, sonnigen Tag in deinem Büro und schaust in die Firmenrechnung. Aufeinmal merkst du, dass dein Manager Geld veruntreut  hat. Was machst du?",new String[]{"Töten","Steuererklärung schreiben","Feuern"});
-                auftrag[2] = new Auftrag("Du bist der Boss einer Firma und sitzt an einem schönen, sonnigen Tag in deinem Büro und schaust in die Firmenrechnung. Aufeinmal merkst du, dass dein Manager Geld veruntreut  hat. Was machst du?",new String[]{"Töten","Steuererklärung schreiben","Feuern"});
+                auftrag[0] = new Auftrag("Du unterhälst dich mit einer Arbeitskollegin und sie 'friendzoned' dich. Du bist traurig. Was willst du tuen?",new String[]{"Töten","Steuererklärung schreiben","Streiten"});
+                auftrag[1] = new Auftrag("Dein Kollege verabschiedet sich mit den Worten 'Bruder muss Los', obwohl er weiß, dass er noch eine Steuererklärung machen muss.",new String[]{"Töten","Steuererklärung schreiben","Streiten"});
+                auftrag[2] = new Auftrag("",new String[]{"Töten","Steuererklärung schreiben","Streiten"});
                 break;
             case 3: auftrag = new Auftrag[1];
                 auftrag[0] = new Auftrag("Welche Säure ist HCL",new String[]{"Salpetersäure","Schwefelsäure","Salzsäure","Ameisensäure"},"C" );
