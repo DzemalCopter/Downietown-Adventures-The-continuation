@@ -15,7 +15,7 @@ public class Level {
         scenario = new String[4];
         switch(level){
             case 1: auftrag = new Auftrag[2];
-                auftrag[0] = new Auftrag("Du bist der Boss einer Firma und sitzt an einem schönen, sonnigen Tag in deinem Büro und schaust in die Firmenrechnung. Aufeinmal merkst du, dass dein Manager Geld veruntreut  hat. Was machst du?",new String[]{"Töten","Steuererklärung schreiben","Streiten"});
+                auftrag[0] = new Auftrag("Du bist der Boss einer Firma und sitzt an einem schönen, sonnigen Tag in deinem Töten und schaust in die Firmenrechnung. Aufeinmal merkst du, dass dein Manager Geld veruntreut  hat. Was machst du?",new String[]{"Töten","Steuererklärung schreiben","Streiten"});
                 auftrag[1] = new Auftrag("Dein Chef hat zum dritten mal an diesem Tag deinen Kaffee geklaut. Deine Aggression verleitet dich zu...",new String[]{"Töten","Steuererklärung schreiben","Streiten"});
                 break;
             case 2: auftrag = new Auftrag[2];

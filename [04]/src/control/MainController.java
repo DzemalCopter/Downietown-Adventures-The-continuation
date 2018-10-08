@@ -1,8 +1,7 @@
 package control;
 
-import model.Auftrag;
 import model.Player;
-import model.Levels;
+import view.Arbeitsplatz;
 
 public class MainController {
 
@@ -10,10 +9,15 @@ public class MainController {
     //Referenzen
    private Player player;
    private QuestionHandler qh;
+   private Arbeitsplatz ap;
 
 
     public MainController(){
      qh = new QuestionHandler();
+    }
+
+    public void creatArbeitsplatz(int p){
+        ap = new Arbeitsplatz(this,p);
     }
 
     public void creatPlayer(String name){

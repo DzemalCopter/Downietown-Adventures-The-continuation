@@ -34,7 +34,23 @@ public class GamePanelHandler extends JPanel
             @Override
             public void actionPerformed(ActionEvent e)
             {
-
+                mC.creatArbeitsplatz(1);
+            }
+        });
+        steuer.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                mC.creatArbeitsplatz(2);
+            }
+        });
+        feuern.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                mC.creatArbeitsplatz(3);
             }
         });
     }
