@@ -8,6 +8,7 @@ public class StartPanelHandler extends JPanel
 {
     private JTextField name;
     private JButton startButton;
+    private JPanel panel;
 
 
     private MainView mainView;
