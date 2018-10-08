@@ -2,27 +2,25 @@ package model;
 
 public class Auftrag {
 
-    private String[] answer;
-    private String question;
-    private String correctAnswer;
+    private String[] choice;
+    private String scenario;
 
-    public Auftrag(String question, String[] answer, String correctAnswer){
-        this.question = question;
-        this.answer = answer;
-        this.correctAnswer = correctAnswer;
+
+    public Auftrag(String scenario, String[] choice){
+        this.scenario = scenario;
+        this.choice = choice;
+
     }
 
     public String getQuestion(){
-        return question;
+        return scenario;
     }
 
-    public String[] getAnswers(){
-        return answer;
+    public String[] getChoice(){
+        return choice;
     }
 
-    public String getCorrectAnswer(){
-        return correctAnswer;
-    }
+
 
 
 }
