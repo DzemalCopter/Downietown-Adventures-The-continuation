@@ -8,7 +8,7 @@ public class Arbeitsplatz extends JFrame
 {
     private MainController mC;
     private int pan;
-    private JPanel töten,steuerklärung,feuern;
+    private JPanel töten,steuerklärung,feuern,dealerQuiz;
 
     public Arbeitsplatz(MainController mainController,int pan) {
 
@@ -22,7 +22,7 @@ public class Arbeitsplatz extends JFrame
         mC = mainController;
         this.pan = pan;
 
-
+        dealerQuiz = new DealerQuiz(mC,this).getPanel();
         töten = new Töten(this).getPanel();
         steuerklärung = new Steuererklärung(this).getPanel();
         feuern = new Feuern(this).getPanel();
@@ -36,6 +36,13 @@ public class Arbeitsplatz extends JFrame
 
 
         }
+    }
+
+    public void playQuiz(){
+        this.getContentPane().removeAll();
+        this.getContentPane().invalidate();
+        this.setContentPane(dealerQuiz);
+        this.getContentPane().revalidate();
     }
 
 

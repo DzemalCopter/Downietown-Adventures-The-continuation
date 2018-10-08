@@ -8,12 +8,14 @@ public class MainController {
     private String rightAnswer;
     //Referenzen
    private Player player;
-   private QuestionHandler qh;
+   private AuftragHandler qh;
    private Arbeitsplatz ap;
+   private QuestionHandler th;
+
 
 
     public MainController(){
-     qh = new QuestionHandler();
+     qh = new AuftragHandler();
     }
 
     public void creatArbeitsplatz(int p){
@@ -44,6 +46,28 @@ public class MainController {
 
         return output;
      }
+    public String[] getQuestionAndAnswers(){
+        String[] questions = th.getRandomQuestion(getPlayerLevel());
+        rightAnswer = questions[5];
+
+
+        String [] output = new String[5];
+        for(int i = 0; i < 5;i++){
+            output[i] = questions[i];
+        }
+
+        return output;
+    }
+
+    public boolean answer(String chosenAnswer){
+        boolean answer = false;
+        // chosenAnswer == rigthAnswer --> Prüfung, ob beide String auf einen gemeinsamen Punkt im Arbeitsspeicher zeigen.
+        if(chosenAnswer.equals(rightAnswer) ){
+            answer = true;
+            player.setLevel(getPlayerLevel()+1);
+        }
+        return answer;
+    }
 
 
 }
