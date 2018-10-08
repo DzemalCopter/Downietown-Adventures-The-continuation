@@ -1,12 +1,12 @@
 package model;
 
-public class Question{
+public class Auftrag {
 
     private String[] answer;
     private String question;
     private String correctAnswer;
 
-    public Question(String question, String[] answer, String correctAnswer){
+    public Auftrag(String question, String[] answer, String correctAnswer){
         this.question = question;
         this.answer = answer;
         this.correctAnswer = correctAnswer;
