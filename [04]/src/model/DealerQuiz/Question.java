@@ -1,4 +1,4 @@
-package model;
+package model.DealerQuiz;
 
 public class Question{
 

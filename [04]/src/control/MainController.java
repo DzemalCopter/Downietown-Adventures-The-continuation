@@ -1,10 +1,13 @@
 package control;
 
 import model.Player;
+<<<<<<< Updated upstream
 import sun.applet.Main;
 import view.Arbeitsplatz;
 import view.GamePanelHandler;
 import view.MainView;
+=======
+>>>>>>> Stashed changes
 
 public class MainController {
 
@@ -56,7 +59,7 @@ public class MainController {
 
         return output;
      }
-    public String[] getQuestionAndAnswers(){
+        public String[] getQuestionAndAnswers(){
         String[] questions = th.getRandomQuestion(getPlayerLevel());
         rightAnswer = questions[5];
 

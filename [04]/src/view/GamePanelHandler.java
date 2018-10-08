@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GamePanelHandler extends
+public class GamePanelHandler extends JPanel
 {
 
     private JTextArea textArea1;

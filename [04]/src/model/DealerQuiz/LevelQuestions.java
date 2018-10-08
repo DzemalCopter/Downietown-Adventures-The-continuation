@@ -1,4 +1,4 @@
-package model;
+package model.DealerQuiz;
 
 public class LevelQuestions {
 
@@ -15,8 +15,8 @@ public class LevelQuestions {
         answers = new String[4];
         switch(level){
             case 1: questions = new Question[2];
-                questions[0] = new Question("Wie heißt dein Inf-Lk Lehrer",new String[]{"Herr Kneblewski","Herr Ambrolord","Herr Abmbrösius","Herr Ambrosius"},"D" );
-                questions[1] = new Question("Wo findet der Inf-Lk statt",new String[]{"Stg","KKG","HHG","MKG"},"B" );
+                questions[0] = new Question("Wie hält man eine Waffe?",new String[]{"Mit den Füßen","Mit dem Mund","Mit dem Händen","Garnicht"},"C" );
+                questions[1] = new Question("",new String[]{"","KKG","HHG","MKG"},"B" );
                 break;
             case 2: questions = new Question[3];
                 questions[0] = new Question("Welches Land regiert Donald T.?",new String[]{"Entenhausen","USA","Deutschland","Mexico"},"B" );
@@ -41,10 +41,6 @@ public class LevelQuestions {
     }
 
     public Question getRandomQuestion(){
-        //Typecast: Java wird aufgefordert, aus einem Datentypen
-        //          einen anderen zu machen. Hierbei wird eine
-        //          Dezimalzahl "hart" abgerundet. D.h, aus
-        //          5.87 wird 5.
         int r= (int) (Math.random()*questions.length);
         return questions[r];
     }
