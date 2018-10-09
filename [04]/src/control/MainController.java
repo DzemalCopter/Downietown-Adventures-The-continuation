@@ -1,7 +1,7 @@
 package control;
 
 import model.Player;
-import sun.applet.Main;
+//import sun.applet.Main;
 import view.Arbeitsplatz;
 import view.GamePanelHandler;
 import view.MainView;

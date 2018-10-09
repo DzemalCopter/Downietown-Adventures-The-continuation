@@ -28,7 +28,7 @@ public class Level {
                 break;
             case 4:
                auftrag = new Auftrag[2];
-                auftrag[0] = new Auftrag("",new String[]{"Du siehst einen Mitarbeiter einen Fidget Spinner benutzen. Du gerätst aus allen Fugen und willst ... ""Töten","Steuererklärung schreiben","Streiten"});
+                auftrag[0] = new Auftrag("",new String[]{"Du siehst einen Mitarbeiter einen Fidget Spinner benutzen. Du gerätst aus allen Fugen und willst ... ","Töten","Steuererklärung schreiben","Streiten"});
                 auftrag[1] = new Auftrag("",new String[]{"Dein Mitarbeiter spricht Gif falsch aus. Du sagts dem Richter erkläre sich von selber dass ich.. ","Töten","Steuererklärung schreiben","Streiten"});
                 break;
             case 5:
