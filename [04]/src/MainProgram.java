@@ -10,5 +10,7 @@ public class MainProgram {
         MainController mC = new MainController();
         MainView mV = new MainView(mC);
         mC.setMainView(mV);
+
+
     }
 }

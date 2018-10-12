@@ -4,10 +4,12 @@ public class Player {
 
     private String name;
     private int level;
+    private int quizLevel;
 
     public Player(String n){
         name = n;
         level = 0;
+        quizLevel = 0;
     }
 
     public  String getName(){
@@ -20,4 +22,11 @@ public class Player {
         this.level = level;
     }
 
+    public int getQuizLevel() {
+        return quizLevel;
+    }
+
+    public void setQuizLevel(int quizLevel) {
+        this.quizLevel = quizLevel;
+    }
 }

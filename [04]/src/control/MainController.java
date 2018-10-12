@@ -45,9 +45,13 @@ public class MainController {
     public int getPlayerLevel(){
         return player.getLevel();
     }
+    public int getQuizLevel(){
+        return player.getQuizLevel();
+    }
+
 
     public String[] getAuftragAndChoices(){
-        String[] questions = qh.getRandomChoices(getPlayerLevel());
+        String[] questions = qh.getRandomChoices(getQuizLevel());
 
 
 
