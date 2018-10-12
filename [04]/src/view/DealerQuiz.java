@@ -54,6 +54,8 @@ public class DealerQuiz extends JPanel
             @Override
             public void actionPerformed(ActionEvent e) {
                 feedback("B");
+                questionArea.setText(questionArea.getText()+"Treffer");
+                Check();
                 if(counter <= 4) {
                     feedback("B");
                 }
@@ -65,6 +67,8 @@ public class DealerQuiz extends JPanel
             public void actionPerformed(ActionEvent e) {
 
                 feedback("C");
+                questionArea.setText(questionArea.getText()+"Treffer");
+                Check();
 
                 if(counter <= 4){
                     feedback("C");
@@ -75,6 +79,8 @@ public class DealerQuiz extends JPanel
             @Override
             public void actionPerformed(ActionEvent e) {
                 feedback("D");
+                questionArea.setText(questionArea.getText()+"Treffer");
+                Check();
                 if(counter <= 4){
                     feedback("D");
 

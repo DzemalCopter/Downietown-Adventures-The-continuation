@@ -9,6 +9,7 @@ public class MainView extends JFrame {
 
     MainController mainController;
     private JPanel startPanel,gamePanel;
+    private GamePanelHandler gamePanelHandler;
 
 
 
@@ -43,7 +44,8 @@ public class MainView extends JFrame {
             this.getContentPane().removeAll();
             this.getContentPane().invalidate();
 
-            this.gamePanel = new GamePanelHandler(mainController, mainController.getPlayerName(), mainController.getPlayerLevel()).getPanel();
+            this.gamePanelHandler = new GamePanelHandler(mainController, mainController.getPlayerName(), mainController.getPlayerLevel());
+            this.gamePanel = gamePanelHandler.getPanel();
 
             this.getContentPane().add(gamePanel);
             this.getContentPane().revalidate();
@@ -53,7 +55,7 @@ public class MainView extends JFrame {
 
     }
     public void updateGamePanelHandler(){
-
+        this.gamePanelHandler.updateButtons();
     }
 
 
