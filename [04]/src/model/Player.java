@@ -7,7 +7,7 @@ public class Player {
 
     public Player(String n){
         name = n;
-        level = 1;
+        level = 0;
     }
 
     public  String getName(){

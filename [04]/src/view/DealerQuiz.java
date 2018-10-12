@@ -28,6 +28,7 @@ public class DealerQuiz extends JPanel
         counter = 0;
         updateQuestionsAndAnswers();
         shootcounter = 0;
+        createButtons();
 
     }
 
@@ -52,7 +53,7 @@ public class DealerQuiz extends JPanel
         answerB.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                feedback("B");
                 if(counter <= 4) {
                     feedback("B");
                 }
@@ -63,6 +64,7 @@ public class DealerQuiz extends JPanel
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                feedback("C");
 
                 if(counter <= 4){
                     feedback("C");
@@ -72,7 +74,7 @@ public class DealerQuiz extends JPanel
         answerD.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                feedback("D");
                 if(counter <= 4){
                     feedback("D");
 
