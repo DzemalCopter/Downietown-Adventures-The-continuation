@@ -25,7 +25,7 @@ public class AuftragHandler
     public String[] getRandomChoices(int level){
         Level lq = allLevels[level];
         Auftrag auftrag = lq.getRandomAuftrag();
-        String[] output = new String[3];
+        String[] output = new String[4];
         output[0] = auftrag.getScenario();
         output[1] = auftrag.getChoice()[0];
         output[2] = auftrag.getChoice()[1];

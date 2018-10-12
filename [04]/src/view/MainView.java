@@ -9,7 +9,7 @@ public class MainView extends JFrame {
 
     MainController mainController;
     private JPanel startPanel,gamePanel;
-    private GamePanelHandler gph;
+
 
 
     public MainView(MainController mainController) {
@@ -44,7 +44,7 @@ public class MainView extends JFrame {
             this.getContentPane().invalidate();
 
             this.gamePanel = new GamePanelHandler(mainController, mainController.getPlayerName(), mainController.getPlayerLevel()).getPanel();
-            gph = (GamePanelHandler)gamePanel;
+
             this.getContentPane().add(gamePanel);
             this.getContentPane().revalidate();
 
@@ -53,7 +53,7 @@ public class MainView extends JFrame {
 
     }
     public void updateGamePanelHandler(){
-        gph.updateButtons();
+
     }
 
 

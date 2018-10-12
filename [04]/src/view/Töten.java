@@ -21,25 +21,28 @@ public class Töten extends JPanel
     private int random;
 
 
-    public Töten(Arbeitsplatz ap){
+    public Töten(Arbeitsplatz ap) {
         right = 0;
         this.ap = ap;
-        random = (int) Math.random()*3+1;
-        switch (random){
-            case 1:
-                tisch = 3;
-                schrank = 2;
-                computer = 1;
-            case 2:
-                tisch = 1;
-                schrank = 2;
-                computer = 3;
-            case 3:
-                tisch = 1;
-                schrank = 3;
-                computer = 2;
-
+        random = (int) Math.random() * 3 + 1;
+        if (random == 1) {
+            tisch = 3;
+            schrank = 2;
+            computer = 1;
         }
+        if (random == 2) {
+            tisch = 1;
+            schrank = 2;
+            computer = 3;
+        }
+        if (random == 2) {
+            tisch = 1;
+            schrank = 3;
+            computer = 2;
+        }
+
+
+
 
 
 

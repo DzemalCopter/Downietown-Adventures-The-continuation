@@ -28,13 +28,13 @@ public class Level {
                 break;
             case 4:
                auftrag = new Auftrag[2];
-                auftrag[0] = new Auftrag("",new String[]{"Du siehst einen Mitarbeiter einen Fidget Spinner benutzen. Du gerätst aus allen Fugen und willst ... ","Töten","Steuererklärung schreiben","Streiten"});
-                auftrag[1] = new Auftrag("",new String[]{"Dein Mitarbeiter spricht Gif falsch aus. Du sagts dem Richter erkläre sich von selber dass ich.. ","Töten","Steuererklärung schreiben","Streiten"});
+                auftrag[0] = new Auftrag("Du siehst einen Mitarbeiter einen Fidget Spinner benutzen. Du gerätst aus allen Fugen und willst ...",new String[]{"Töten","Steuererklärung schreiben","Streiten"});
+                auftrag[1] = new Auftrag("Dein Mitarbeiter spricht Gif falsch aus. Du sagts dem Richter erkläre sich von selber dass ich.. ",new String[]{"Töten","Steuererklärung schreiben","Streiten"});
                 break;
             case 5:
                 auftrag = new Auftrag[2];
-                auftrag[0] = new Auftrag("",new String[]{"Der größte Lowbob aus der Arbeit wird zum Star-Arbeiter. Eines Tages versucht er dich in die Opfer-Rolle zu bringen.","Töten","Steuererklärung schreiben","Streiten"});
-                auftrag[1] = new Auftrag("",new String[]{"Jakob lacht dich aus...","Töten","Steuererklärung schreiben","Streiten"});
+                auftrag[0] = new Auftrag("Der größte Lowbob aus der Arbeit wird zum Star-Arbeiter. Eines Tages versucht er dich in die Opfer-Rolle zu bringen.",new String[]{"Töten","Steuererklärung schreiben","Streiten"});
+                auftrag[1] = new Auftrag("Ibrahim lacht dich aus...",new String[]{"Töten","Steuererklärung schreiben","Streiten"});
         }
     }
 

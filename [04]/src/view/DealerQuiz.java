@@ -93,7 +93,6 @@ public class DealerQuiz extends JPanel
     }
 
     public void updateQuestionsAndAnswers(){
-        mc.getQuestionAndAnswers();
         String[] answerAndQuestions = mc.getQuestionAndAnswers();
 
         questionArea.setText(answerAndQuestions[0]);

@@ -22,6 +22,7 @@ public class MainController {
 
     public MainController(){
      qh = new AuftragHandler();
+     th = new QuestionHandler();
 
     }
 
@@ -50,8 +51,8 @@ public class MainController {
 
 
 
-        String [] output = new String[5];
-        for(int i = 0; i < 5;i++){
+        String [] output = new String[4];
+        for(int i = 0; i < 4;i++){
             output[i] = questions[i];
         }
 

@@ -72,7 +72,7 @@ public class GamePanelHandler extends JPanel
         feuern.setEnabled(true);
         String[] s = mC.getAuftragAndChoices();
         textArea1.setText(s[0]);
-        töten.setText(s[1]);
+         töten.setText(s[1]);
         steuer.setText(s[2]);
         feuern.setText(s[3]);
         name.setText(playerName);

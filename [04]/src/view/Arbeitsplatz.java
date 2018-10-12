@@ -31,10 +31,13 @@ public class Arbeitsplatz extends JFrame
         switch (pan){
             case 1:
                 this.setContentPane(töten);
+                break;
             case 2:
                 this.setContentPane(steuerklärung);
+                break;
             case 3:
                 this.setContentPane(feuern);
+                break;
 
 
         }
