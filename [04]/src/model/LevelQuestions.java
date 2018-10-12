@@ -15,11 +15,11 @@ public class LevelQuestions {
         answers = new String[4];
         switch(level){
             case 1: questions = new Question[2];
-                questions[0] = new Question("Wie heißt dein Inf-Lk Lehrer",new String[]{"Herr Kneblewski","Herr Ambrolord","Herr Abmbrösius","Herr Ambrosius"},"D" );
-                questions[1] = new Question("Wo findet der Inf-Lk statt",new String[]{"Stg","KKG","HHG","MKG"},"B" );
+                questions[0] = new Question("Wie hält man eine Waffe?",new String[]{"Mit den Füßen","Mit dem Mund","Mit dem Händen","Garnicht"},"C" );
+                questions[1] = new Question("Welche der hier genannten Gegen stände sind Schusswaffen im Sinne des Waffengesetzes? ",new String[]{"Blasrohr","Druckluftgewehr mit Zulassungszeichen „F im Fünfeck“","Doppelflinte","C4"},"B" );
                 break;
             case 2: questions = new Question[3];
-                questions[0] = new Question("Welches Land regiert Donald T.?",new String[]{"Entenhausen","USA","Deutschland","Mexico"},"B" );
+                questions[0] = new Question("Welche der hier aufgelisteten Waffen ist eine halbautomatische Schusswaffe?",new String[]{"Revolver","Selbstladepistole","Deutschland","Mexico"},"B" );
                 questions[1] = new Question("In welchem Bundesland liegt Freiburg?",new String[]{"Mallorca","Bayern","Baden-Württemberg","Deutschland"},"C" );
                 questions[2] = new Question("Wann fand die Völkerschlacht von Leipzig statt? ",new String[]{"1813","1933","2009","1412"},"A" );
                 break;
@@ -34,7 +34,7 @@ public class LevelQuestions {
                 break;
             case 5:
                 questions = new Question[1];
-                questions[0] = new Question("Wer hat Downietown Adventures programmiert? ",new String[]{"Keiner","Ibrahim & Felix & Timo & Markus ","Nur Ibrahim mit einer Hand"," Nur Markus"},"C" );
+                questions[0] = new Question("Wer hat TelCO Adventures programmiert? ",new String[]{"Keiner"," Arujan, Henri, Tpbias","Nur Ibrahim mit einer Hand"," Arujan, Henri, Tobias, ibrahim"},"D" );
 
 
         }
