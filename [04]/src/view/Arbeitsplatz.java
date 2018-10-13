@@ -28,6 +28,8 @@ public class Arbeitsplatz extends JFrame
         töten = new Töten(this).getPanel();
         steuerklärung = new Steuererklärung(this).getPanel();
         feuern = new Feuern(this).getPanel();
+
+
         switch (pan){
             case 1:
                 this.setContentPane(töten);

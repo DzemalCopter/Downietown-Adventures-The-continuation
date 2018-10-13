@@ -5,6 +5,7 @@ import model.Player;
 import view.Arbeitsplatz;
 import view.GamePanelHandler;
 import view.MainView;
+import view.DealerQuiz;
 
 
 public class MainController {
@@ -16,6 +17,8 @@ public class MainController {
    private Arbeitsplatz ap;
    private QuestionHandler th;
    private MainView mV;
+   private DealerQuiz dQ;
+
 
 
 
@@ -90,17 +93,7 @@ public class MainController {
 
 
     }
-    public int gamesEnd(){
-        String help = String.valueOf(player.getLevel());
-        if(getPlayerLevel()<=1){
-            gPH.updateQuestionsAndAnswers(true);
-            gPH.setlevel(help);
-            return 1;
-        }
-        gPH.updateQuestionsAndAnswers(false);
-        gPH.end();
-        return 0;
-    }
+
 
 
 
