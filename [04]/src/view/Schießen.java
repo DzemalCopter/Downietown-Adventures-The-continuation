@@ -6,11 +6,12 @@ import java.awt.event.ActionListener;
 
 public class Schießen {
     private JButton schießenButton;
-    private JPanel panel;
+    private JPanel panel1;
     private int shoot;
 
     public Schießen() {
         shoot = 0;
+        panel1.setVisible(true);
         schießenButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

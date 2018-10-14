@@ -3,6 +3,7 @@ package view;
 import control.MainController;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -21,11 +22,13 @@ public class DealerQuiz extends JPanel
 
 
 
+
     public DealerQuiz(MainController mc, Arbeitsplatz ap)
     {
 
         this.mc = mc;
         this.ap = ap;
+
 
         updateQuestionsAndAnswers();
 
@@ -92,6 +95,12 @@ public class DealerQuiz extends JPanel
 
             }
             else {
+                answerA.setEnabled(false);
+                answerB.setEnabled(false);
+                answerC.setEnabled(false);
+                answerD.setEnabled(false);
+
+
 
 
             }
@@ -102,5 +111,7 @@ public class DealerQuiz extends JPanel
     {
         return panel;
     }
+
+
 
 }
